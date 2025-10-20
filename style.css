@@ -1,0 +1,42 @@
+/* Custom styles for the futuristic/dark theme */
+:root {
+    --primary-color: #a5b4fc; /* Indigo 300 for highlights */
+    --background-color: #0f172a; /* Slate 900 */
+    --card-color: #1e293b; /* Slate 800 */
+}
+
+/* Apply colors and font across the body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: white;
+}
+
+/* Style the main content sections using the card color defined in the root */
+.page-content {
+    background-color: var(--card-color);
+}
+
+/* Navigation Link Styling (active state) */
+.nav-link.active {
+    border-bottom: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Transition/Animation for page switching */
+.page-content {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom styling for form inputs to match the dark theme */
+input, textarea {
+    background-color: #334155 !important; /* Slate 700 */
+    border-color: #475569 !important; /* Slate 600 */
+    color: white !important;
+}
