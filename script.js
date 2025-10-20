@@ -75,7 +75,7 @@ const loadingElement = document.getElementById('prediction-loading');
 const sourcesContainer = document.getElementById('prediction-sources');
 const sourcesListElement = document.getElementById('sources-list');
 
-const apiKey = ""; // API key is intentionally left empty for the canvas runtime environment.
+const apiKey = "AIzaSyCYF8PhZ6e33p_DzoLS0ADvirskOdWclX4"; // API key is intentionally left empty for the canvas runtime environment.
 
 /**
  * Calculates exponential backoff delay for retries.
